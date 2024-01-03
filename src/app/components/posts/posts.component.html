@@ -1,0 +1,12 @@
+<div  *ngIf="apiData">
+  <h2>Api Data</h2>
+  <ul *ngFor="let data of apiData">
+    <li>
+      <h3>{{ data.title }}</h3>
+      <p>{{ data.body }}</p>
+    </li>
+  </ul>
+</div>
+<div *ngIf="!apiData">
+    <p>Loading...</p>
+</div>
