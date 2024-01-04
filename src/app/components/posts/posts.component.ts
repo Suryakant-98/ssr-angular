@@ -13,7 +13,6 @@ export class PostsComponent implements OnInit{
   ngOnInit(): void {
       this.apiService.fetchData().subscribe((res => {
         this.apiData = res;
-        console.log(res);
       }))
   }
 
